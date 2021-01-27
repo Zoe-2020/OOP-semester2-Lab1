@@ -26,7 +26,7 @@ namespace LabSheet1
 
         public override string ToString()
         {
-            return string.Format($"{AlbumName}{YearsOfRelease}{Sales}");
+            return string.Format($"{AlbumName}- Released in {YearsOfRelease} sales of {Sales}");
 
 
         }

@@ -10,7 +10,9 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="LstBox" HorizontalAlignment="Left" Height="281" Margin="130,60,0,0" VerticalAlignment="Top" Width="200"/>
+        <ListBox x:Name="LstBox" HorizontalAlignment="Left" Height="281" Margin="42,60,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="LstBox_SelectionChanged"/>
+        <ListBox x:Name="AlbumLBox" HorizontalAlignment="Left" Height="133" Margin="289,208,0,0" VerticalAlignment="Top" Width="470"/>
+        <TextBlock x:Name="BandInfoTxtBlk" HorizontalAlignment="Left" Margin="289,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="470"/>
 
     </Grid>
 </Window>

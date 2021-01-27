@@ -90,5 +90,17 @@ namespace LabSheet1
             bands.Sort();
             LstBox.ItemsSource = bands;
         }
+
+        private void LstBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Band selectedBand = LstBox.SelectedItem as Band;
+
+            if (selectedBand != null)
+            {
+                AlbumLBox.ItemsSource = selectedBand.AlbumList;
+
+                BandInfoTxtBlk.Text = string.Format($"{selectedBand.year}" + $"\nMembers: {selectedBand.Members}");
+            }
+        }
     }
 }
